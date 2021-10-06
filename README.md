@@ -9,3 +9,5 @@
    * number
    * string
    * boolean
+   * object
+   * arrays
