@@ -4,3 +4,8 @@
    * install server
 3. npm start
    * start the server
+
+* Basic types
+   * number
+   * string
+   * boolean
