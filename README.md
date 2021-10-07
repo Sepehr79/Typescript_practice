@@ -9,3 +9,13 @@
    * number
    * string
    * boolean
+   * object
+   * arrays
+   * tuples
+   * enums
+   * any
+
+* Other types
+   * union
+   * Literal 
+   * type aliases 

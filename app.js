@@ -31,3 +31,28 @@ for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
     console.log(name_1);
 }
 var anyArray = [1, "sepehr", false];
+var myTuple = [1, 2, "sepehr", false];
+myTuple.push("sepehr");
+for (var _a = 0, myTuple_1 = myTuple; _a < myTuple_1.length; _a++) {
+    var index = myTuple_1[_a];
+    console.log(index);
+}
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 6] = "ADMIN";
+    Role["READ_ONLY"] = "READ_ONLY";
+    Role[Role["USER"] = 7] = "USER";
+})(Role || (Role = {}));
+var role = Role.READ_ONLY;
+if (role === Role.READ_ONLY) {
+    console.log(role.toString());
+}
+var myArr = ["sepehr", 1, true, Role.ADMIN, { name: "sepehr", age: 21 }];
+function combine(n1, n2, resultConvesion) {
+    if ((typeof n1 === 'number' && typeof n2 === 'number') || resultConvesion === 'as-number') {
+        return +n1 + +n2;
+    }
+    return n1.toString() + n2.toString();
+}
+console.log(combine(4, "6", "as-string")); // 46
+console.log(combine(4, "6", "as-number")); // 10
