@@ -108,3 +108,15 @@ function calculateAndDo(n1: number, n2: number, fun: (result: number) => void){
 }
 
 calculateAndDo(5, 6, printResult)
+
+// Unknown type
+let variable1: unknown;
+let variable2: string = "string"
+
+variable1 = 5;
+variable1 = "sepehr";
+
+if(typeof variable1 === 'string'){
+    variable2 = variable1
+}
+    
