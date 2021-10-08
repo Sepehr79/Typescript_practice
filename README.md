@@ -16,6 +16,13 @@
    * any
 
 * Other types
-   * union
-   * Literal 
-   * type aliases 
+   * union        number | string
+   * Literal      'text' | 'other text'
+   * type aliases   type example = number | string
+
+
+
+
+`
+   tsc app.ts -w
+`
