@@ -56,3 +56,20 @@ function combine(n1, n2, resultConvesion) {
 }
 console.log(combine(4, "6", "as-string")); // 46
 console.log(combine(4, "6", "as-number")); // 10
+function printHello() {
+    console.log("Hello world");
+    return;
+}
+var costomFunction = add;
+costomFunction(6, 5, true);
+var anotherFunction = printHello;
+anotherFunction();
+// Function call back
+function printResult(result) {
+    console.log("Call back function: " + result);
+}
+function calculateAndDo(n1, n2, fun) {
+    var result = n1 + n2;
+    fun(result);
+}
+calculateAndDo(5, 6, printResult);

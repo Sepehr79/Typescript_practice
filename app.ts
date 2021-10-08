@@ -90,4 +90,21 @@ function printHello(): undefined | void{
 }
 
 
+let costomFunction: Function = add
+costomFunction(6, 5, true);
 
+let anotherFunction: () => void = printHello
+anotherFunction()
+
+// Function call back
+
+function printResult(result: any){
+    console.log("Call back function: " + result);
+}
+
+function calculateAndDo(n1: number, n2: number, fun: (result: number) => void){
+    const result = n1 + n2;
+    fun(result)
+}
+
+calculateAndDo(5, 6, printResult)
