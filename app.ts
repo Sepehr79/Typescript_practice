@@ -124,3 +124,6 @@ function throwError(message: string, code: number): never{
     throw {message: message, errorCode: code};
 }
     
+console.log(
+    "Hello world"
+)
