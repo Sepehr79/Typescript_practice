@@ -119,4 +119,8 @@ variable1 = "sepehr";
 if(typeof variable1 === 'string'){
     variable2 = variable1
 }
+
+function throwError(message: string, code: number): never{
+    throw {message: message, errorCode: code};
+}
     
