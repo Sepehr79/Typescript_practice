@@ -25,3 +25,6 @@
 
 * Compile in watch mode
 `tsc app.ts -w`
+
+* Create new typescript project
+`tsc --init`

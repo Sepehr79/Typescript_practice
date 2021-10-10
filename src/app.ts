@@ -1,3 +1,4 @@
+import { Person } from './main';
 function add(n1: number, n2: number, printResult?: boolean){
     const result = n1 + n2;
     if(printResult){
@@ -127,3 +128,9 @@ function throwError(message: string, code: number): never{
 console.log(
     "Hello world"
 )
+
+console.log("Testing")
+
+let person2: Person = new Person("sepehr")
+
+console.log(person2.personName)
