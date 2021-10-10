@@ -24,6 +24,4 @@
 
 
 * Compile in watch mode
-`
-   tsc app.ts -w
-`
+`tsc app.ts -w`
