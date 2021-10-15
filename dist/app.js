@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const main_1 = require("./main");
 function add(n1, n2, printResult) {
     const result = n1 + n2;
     if (printResult) {
@@ -87,5 +86,4 @@ function throwError(message, code) {
 }
 console.log("Hello world");
 console.log("Testing");
-let person2 = new main_1.Person("sepehr");
-console.log(person2.personName);
+console.log("Hello world!");

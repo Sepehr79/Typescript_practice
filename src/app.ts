@@ -1,4 +1,5 @@
-import { Person } from './main';
+import mysql from "mysql"
+
 function add(n1: number, n2: number, printResult?: boolean){
     const result = n1 + n2;
     if(printResult){
@@ -131,6 +132,4 @@ console.log(
 
 console.log("Testing")
 
-let person2: Person = new Person("sepehr")
-
-console.log(person2.personName)
+console.log("Hello world!")
